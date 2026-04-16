@@ -1,0 +1,7 @@
+# Ignore big data and output folders
+data/
+e745_assembly/
+*.out
+*.fastq.gz
+*.fasta
+
