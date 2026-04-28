@@ -1,0 +1,19 @@
+#                                                                                   --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name               accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#       ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:511486-514071|- -            862 322at186826          -            762  4.9e-117  389.5  30.8   1   5     5e-33   7.7e-30  101.1   3.8   206   329     1   146     1   177 0.80 tig00000001_517 # 511486 # 514071 # -1 # ID=1_517;partial=00;start_type=TTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.383
+tig00000001:511486-514071|- -            862 322at186826          -            762  4.9e-117  389.5  30.8   2   5   3.8e-35   5.9e-32  108.1   1.7   325   497   182   369   155   400 0.83 tig00000001_517 # 511486 # 514071 # -1 # ID=1_517;partial=00;start_type=TTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.383
+tig00000001:511486-514071|- -            862 322at186826          -            762  4.9e-117  389.5  30.8   3   5   2.3e-23   3.6e-20   69.1   5.8   501   612   466   614   454   617 0.75 tig00000001_517 # 511486 # 514071 # -1 # ID=1_517;partial=00;start_type=TTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.383
+tig00000001:511486-514071|- -            862 322at186826          -            762  4.9e-117  389.5  30.8   4   5     3e-23   4.6e-20   68.8   0.2   610   692   631   738   628   756 0.76 tig00000001_517 # 511486 # 514071 # -1 # ID=1_517;partial=00;start_type=TTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.383
+tig00000001:511486-514071|- -            862 322at186826          -            762  4.9e-117  389.5  30.8   5   5   9.8e-17   1.5e-13   47.3   0.0   675   757   759   855   749   860 0.82 tig00000001_517 # 511486 # 514071 # -1 # ID=1_517;partial=00;start_type=TTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.383
+tig00000001:514029-515012|- -            328 322at186826          -            762   5.9e-33  111.4   8.1   1   1   3.8e-35     6e-32  108.1   8.1    16   171    30   232     3   267 0.76 tig00000001_518 # 514029 # 515012 # -1 # ID=1_518;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.396
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/322at186826.hmm
+# Target file:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/run_lactobacillales_odb10/hmmer_output/322at186826.out --cpu 1 /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/322at186826.hmm /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation
+# Date:            Tue Apr 28 08:09:57 2026
+# [ok]

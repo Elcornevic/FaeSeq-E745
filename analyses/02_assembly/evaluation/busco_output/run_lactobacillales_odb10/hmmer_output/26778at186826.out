@@ -1,0 +1,15 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:239381-240217|+   -            279 26778at186826        -            216   1.8e-78  260.6   0.1   1   1   3.1e-81   4.7e-78  259.2   0.1     1   216     1   272     1   272 0.85 tig00000001_242 # 239381 # 240217 # 1 # ID=1_242;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=11-12bp;gc_cont=0.425
+tig00000001:2260514-2261866|- -            451 26778at186826        -            216     0.014   12.5   0.1   1   1   1.6e-05     0.025   11.7   0.1   169   215   182   231   166   232 0.84 tig00000001_2199 # 2260514 # 2261866 # -1 # ID=1_2199;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.379
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/26778at186826.hmm
+# Target file:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/run_lactobacillales_odb10/hmmer_output/26778at186826.out --cpu 1 /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/26778at186826.hmm /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation
+# Date:            Tue Apr 28 08:09:56 2026
+# [ok]

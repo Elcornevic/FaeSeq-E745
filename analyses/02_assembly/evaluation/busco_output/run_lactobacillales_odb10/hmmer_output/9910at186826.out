@@ -1,0 +1,18 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:169766-171121|+   -            452 9910at186826         -            393    1e-197  654.2   7.0   1   1  1.1e-199  1.1e-196  650.8   7.0     1   393     3   447     3   447 0.90 tig00000001_180 # 169766 # 171121 # 1 # ID=1_180;partial=00;start_type=ATG;rbs_motif=AGGAG(G)/GGAGG;rbs_spacer=13-15bp;gc_cont=0.425
+tig00000001:1867184-1868686|+ -            501 9910at186826         -            393   1.4e-24   84.2   0.1   1   1   3.3e-27   3.4e-24   82.8   0.1    37   347    57   403    24   420 0.69 tig00000001_1801 # 1867184 # 1868686 # 1 # ID=1_1801;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.387
+tig00000001:2576281-2578008|+ -            576 9910at186826         -            393   4.2e-12   43.0   0.0   1   3   7.2e-12   7.5e-09   32.3   0.0    38   114    88   166    43   217 0.73 tig00000001_2500 # 2576281 # 2578008 # 1 # ID=1_2500;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.416
+tig00000001:2576281-2578008|+ -            576 9910at186826         -            393   4.2e-12   43.0   0.0   2   3     0.026        27    0.8   0.0   206   286   298   390   293   456 0.65 tig00000001_2500 # 2576281 # 2578008 # 1 # ID=1_2500;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.416
+tig00000001:2576281-2578008|+ -            576 9910at186826         -            393   4.2e-12   43.0   0.0   3   3   0.00082      0.84    5.8   0.0   352   387   526   563   518   570 0.76 tig00000001_2500 # 2576281 # 2578008 # 1 # ID=1_2500;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.416
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/9910at186826.hmm
+# Target file:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/run_lactobacillales_odb10/hmmer_output/9910at186826.out --cpu 1 /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/9910at186826.hmm /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation
+# Date:            Tue Apr 28 08:10:00 2026
+# [ok]

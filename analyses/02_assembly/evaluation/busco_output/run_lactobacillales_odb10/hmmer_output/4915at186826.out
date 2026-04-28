@@ -1,0 +1,16 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:643271-645316|-   -            682 4915at186826         -            556  2.4e-301  997.6  20.8   1   1  7.3e-302  1.1e-298  988.8  20.8     1   556    11   638    11   638 0.92 tig00000001_647 # 643271 # 645316 # -1 # ID=1_647;partial=00;start_type=TTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.403
+tig00000001:1424662-1426608|+ -            649 4915at186826         -            556  6.8e-205  679.2  10.0   1   2   1.2e-58   1.8e-55  186.0   3.2     2   129    17   148    16   155 0.92 tig00000001_1369 # 1424662 # 1426608 # 1 # ID=1_1369;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.427
+tig00000001:1424662-1426608|+ -            649 4915at186826         -            556  6.8e-205  679.2  10.0   2   2  2.9e-152  4.5e-149  495.0   0.5   112   555   159   641   154   642 0.87 tig00000001_1369 # 1424662 # 1426608 # 1 # ID=1_1369;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.427
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/4915at186826.hmm
+# Target file:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/run_lactobacillales_odb10/hmmer_output/4915at186826.out --cpu 1 /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/4915at186826.hmm /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation
+# Date:            Tue Apr 28 08:09:58 2026
+# [ok]

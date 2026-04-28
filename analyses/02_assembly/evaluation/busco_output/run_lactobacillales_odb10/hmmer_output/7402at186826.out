@@ -1,0 +1,17 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:1420421-1421755|+ -            445 7402at186826         -            297  1.5e-148  491.6   0.1   1   1  2.8e-151  2.1e-148  491.1   0.1    10   297   104   421    97   421 0.92 tig00000001_1365 # 1420421 # 1421755 # 1 # ID=1_1365;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.401
+tig00000001:2717246-2717974|- -            243 7402at186826         -            297   1.1e-07   29.1   0.0   1   1     2e-10   1.5e-07   28.7   0.0    51   148    98   202    85   220 0.79 tig00000001_2633 # 2717246 # 2717974 # -1 # ID=1_2633;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.368
+tig00000001:243611-244318|+   -            236 7402at186826         -            297   0.00048   17.2   0.0   1   1   6.9e-07   0.00054   17.0   0.0    19   113    53   156    33   227 0.78 tig00000001_248 # 243611 # 244318 # 1 # ID=1_248;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.417
+tig00000001:1568936-1569937|+ -            334 7402at186826         -            297     0.001   16.1   0.0   1   1   2.3e-06    0.0018   15.3   0.0    43   123    50   125    21   136 0.79 tig00000001_1516 # 1568936 # 1569937 # 1 # ID=1_1516;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.439
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/7402at186826.hmm
+# Target file:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/run_lactobacillales_odb10/hmmer_output/7402at186826.out --cpu 1 /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/7402at186826.hmm /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation
+# Date:            Tue Apr 28 08:10:00 2026
+# [ok]

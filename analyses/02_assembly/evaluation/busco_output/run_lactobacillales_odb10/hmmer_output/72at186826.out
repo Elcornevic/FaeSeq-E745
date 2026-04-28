@@ -1,0 +1,21 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:113936-118294|+   -           1453 72at186826           -           1149         0 1932.6   4.3   1   1         0         0 1931.6   4.3    42  1149   232  1451   182  1451 0.92 tig00000001_132 # 113936 # 118294 # 1 # ID=1_132;partial=00;start_type=TTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.406
+tig00000001:2630773-2633562|+ -            930 72at186826           -           1149     1e-26   90.3   0.0   1   1   1.8e-29   1.4e-26   89.9   0.0   189   337     4   163     1   172 0.86 tig00000001_2554 # 2630773 # 2633562 # 1 # ID=1_2554;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.409
+tig00000001:794442-797756|-   -           1105 72at186826           -           1149   2.4e-18   62.7   0.8   1   5     0.004       3.1    2.7   0.0   122   176     8    66     5   109 0.76 tig00000001_786 # 794442 # 797756 # -1 # ID=1_786;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.385
+tig00000001:794442-797756|-   -           1105 72at186826           -           1149   2.4e-18   62.7   0.8   2   5   4.5e-08   3.5e-05   19.1   0.0   502   637   220   358   186   361 0.74 tig00000001_786 # 794442 # 797756 # -1 # ID=1_786;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.385
+tig00000001:794442-797756|-   -           1105 72at186826           -           1149   2.4e-18   62.7   0.8   3   5   3.6e-05     0.028    9.4   0.0   681   738   361   418   359   449 0.87 tig00000001_786 # 794442 # 797756 # -1 # ID=1_786;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.385
+tig00000001:794442-797756|-   -           1105 72at186826           -           1149   2.4e-18   62.7   0.8   4   5   1.5e-05     0.012   10.7   0.0   752   859   470   579   444   586 0.75 tig00000001_786 # 794442 # 797756 # -1 # ID=1_786;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.385
+tig00000001:794442-797756|-   -           1105 72at186826           -           1149   2.4e-18   62.7   0.8   5   5   2.3e-06    0.0018   13.4   1.2   975  1045   716   788   695   839 0.70 tig00000001_786 # 794442 # 797756 # -1 # ID=1_786;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.385
+tig00000001:2027465-2027998|- -            178 72at186826           -           1149   3.5e-17   58.8   0.0   1   1   5.1e-20   3.9e-17   58.6   0.0   190   341     2   163     1   173 0.81 tig00000001_1953 # 2027465 # 2027998 # -1 # ID=1_1953;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.378
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/72at186826.hmm
+# Target file:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/run_lactobacillales_odb10/hmmer_output/72at186826.out --cpu 1 /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/72at186826.hmm /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation
+# Date:            Tue Apr 28 08:10:00 2026
+# [ok]

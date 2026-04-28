@@ -1,0 +1,20 @@
+#                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+tig00000001:243611-244318|+   -            236 46517at186826        -            199   3.1e-62  207.7   0.2   1   2      0.11        89    0.5   0.0    43    66    12    35     5    38 0.78 tig00000001_248 # 243611 # 244318 # 1 # ID=1_248;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.417
+tig00000001:243611-244318|+   -            236 46517at186826        -            199   3.1e-62  207.7   0.2   2   2   3.1e-64   2.4e-61  204.8   0.1    67   199    85   233    39   233 0.85 tig00000001_248 # 243611 # 244318 # 1 # ID=1_248;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.417
+tig00000001:243393-243614|+   -             74 46517at186826        -            199   7.4e-09   33.4   0.9   1   1   1.2e-11   9.6e-09   33.1   0.9     2    45    24    68    23    72 0.87 tig00000001_247 # 243393 # 243614 # 1 # ID=1_247;partial=00;start_type=GTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.374
+tig00000001:1420421-1421755|+ -            445 46517at186826        -            199   2.7e-05   21.8   0.0   1   2       1.3     1e+03   -2.9   0.0    58    88    99   129    78   135 0.78 tig00000001_1365 # 1420421 # 1421755 # 1 # ID=1_1365;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.401
+tig00000001:1420421-1421755|+ -            445 46517at186826        -            199   2.7e-05   21.8   0.0   2   2   1.3e-07    0.0001   19.9   0.0    69   128   143   213   138   223 0.79 tig00000001_1365 # 1420421 # 1421755 # 1 # ID=1_1365;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.401
+tig00000001:2025985-2026458|+ -            158 46517at186826        -            199   0.00043   17.9   0.3   1   2   8.6e-07   0.00067   17.2   0.1    55   104    10    61     6    70 0.84 tig00000001_1951 # 2025985 # 2026458 # 1 # ID=1_1951;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.401
+tig00000001:2025985-2026458|+ -            158 46517at186826        -            199   0.00043   17.9   0.3   2   2       1.9   1.5e+03   -3.5   0.0    22    40   122   140   113   148 0.68 tig00000001_1951 # 2025985 # 2026458 # 1 # ID=1_1951;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.401
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/46517at186826.hmm
+# Target file:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/run_lactobacillales_odb10/hmmer_output/46517at186826.out --cpu 1 /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_downloads/lineages/lactobacillales_odb10/hmms/46517at186826.hmm /home/vico3159/genome_analyses/analyses/02_assembly/evaluation/busco_output/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/vico3159/genome_analyses/analyses/02_assembly/evaluation
+# Date:            Tue Apr 28 08:09:58 2026
+# [ok]
