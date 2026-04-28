@@ -10,3 +10,7 @@ busco_downloads/
 *.fsa
 *.gbk
 *.sqn
+
+*.bam
+*.bai
+*.fq.gz

@@ -1,0 +1,7 @@
+Starting Trimmomatic...
+TrimmomaticPE: Started with arguments:
+ -threads 2 /proj/uppmax2026-1-61/Genome_Analysis/1_Zhang_2017/genomics_data/Illumina/E745-1.L500_SZAXPI015146-56_1_clean.fq.gz /proj/uppmax2026-1-61/Genome_Analysis/1_Zhang_2017/genomics_data/Illumina/E745-1.L500_SZAXPI015146-56_2_clean.fq.gz e745_R1_paired.fq.gz e745_R1_unpaired.fq.gz e745_R2_paired.fq.gz e745_R2_unpaired.fq.gz SLIDINGWINDOW:4:15 MINLEN:36
+Quality encoding detected as phred64
+Input Read Pairs: 1666667 Both Surviving: 1594960 (95.70%) Forward Only Surviving: 70562 (4.23%) Reverse Only Surviving: 444 (0.03%) Dropped: 701 (0.04%)
+TrimmomaticPE: Completed successfully
+Trimming complete!
