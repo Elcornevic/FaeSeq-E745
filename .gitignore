@@ -5,3 +5,10 @@ e745_assembly/
 *.fastq.gz
 *.fasta
 
+busco_downloads/
+*.delta
+*.fna
+*.ffn
+*.fsa
+*.gbk
+*.sqn
