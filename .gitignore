@@ -14,3 +14,4 @@ busco_downloads/
 *.bam
 *.bai
 *.fq.gz
+*.fastq.gz
