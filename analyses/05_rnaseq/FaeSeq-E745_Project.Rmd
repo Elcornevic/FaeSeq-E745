@@ -1,0 +1,156 @@
+---
+title: "FaeSeq-E745 - Differential Expression Analysis"
+author: "Victor Cornejo Villanueva"
+date: "2026-05-11"
+output: html_document
+---
+
+# Load the packages
+```{r}
+library("DESeq2")
+library("ggplot2")
+library("ggrepel")
+```
+
+# 1. Setup the files path
+```{r}
+directory <- "~/Escritorio/Uppsala/9) Genome Analysis/Project/DESeq"
+```
+
+# 2. Build the Metadata Table
+```{r}
+sample_names <- c("ERR1797969", "ERR1797970", "ERR1797971", "ERR1797972", "ERR1797973", "ERR1797974")
+conditions <- c("Serum", "Serum", "Serum", "BH", "BH", "BH")
+file_names <- paste0(sample_names, "_counts.txt")
+
+sampleTable <- data.frame(sampleName = sample_names,
+                          fileName = file_names,
+                          condition = factor(conditions))
+```
+
+# 3. Import the HTSeq data directly into a DESeq2 object
+```{r}
+dds <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable,
+                                  directory = directory,
+                                  design = ~ condition)
+```
+
+# 4. Filter out genes that have zero or almost zero expression across all samples
+```{r}
+keep <- rowSums(counts(dds)) >= 10
+dds <- dds[keep,]
+```
+
+# 5. Run the actual Differential Expression Analysis
+```{r}
+dds <- DESeq(dds)
+```
+
+# Check the results summary
+```{r}
+res <- results(dds)
+summary(res)
+```
+
+# Extract the list of genes
+```{r}
+# Sort the results by the adjusted p-value (most significant at the top)
+resOrdered <- res[order(res$padj),]
+
+# View the top 10 genes directly in R
+head(resOrdered, 10)
+
+# Export the entire list to a CSV file on your computer
+write.csv(as.data.frame(resOrdered), file="E745_Serum_vs_BH_results.csv")
+```
+
+# Associate the list of genes with annotation file
+```{r}
+# Load the Prokka dictionary
+anno <- read.delim("DESeq/e745_annot.tsv", stringsAsFactors = FALSE)
+
+# Convert the DESeq2 results into a standard dataframe
+res_df <- as.data.frame(resOrdered)
+
+# Create a locus_tag column from the row names
+res_df$locus_tag <- rownames(res_df)
+
+# Merge the two tables together based on the locus_tag
+final_results <- merge(res_df, anno, by="locus_tag", all.x=TRUE)
+
+# Sort the final merged table by significance again
+final_results <- final_results[order(final_results$log2FoldChange),]
+
+# Peek at the top 10 genes with their actual biological names!
+head(final_results[, c("locus_tag", "log2FoldChange", "padj", "gene", "product")], 10)
+
+# Export the ultimate master spreadsheet
+write.csv(final_results, file="E745_Serum_vs_BH_Master_Annotated.csv", row.names=FALSE)
+```
+
+# Principal Component Analysis (PCA)
+```{r}
+# Normalize the variance so the plot isn't skewed by highly expressed genes
+vsd <- vst(dds, blind=FALSE)
+
+# Extract the raw data
+pcaData <- plotPCA(vsd, intgroup="condition", returnData=TRUE)
+percentVar <- round(100 * attr(pcaData, "percentVar"))
+
+# Build the plot 
+pca_plot <- ggplot(pcaData, aes(x=PC1, y=PC2, color=condition)) +
+  geom_point(size=6) +          
+  scale_color_manual(values=c("blue", "red")) +
+  xlab(paste0("PC1: ",percentVar[1],"% variance")) +
+  ylab(paste0("PC2: ",percentVar[2],"% variance")) +
+  theme_minimal() +
+  ggtitle("PCA - Serum vs BH Replicates") +
+  theme(plot.title = element_text(hjust = 0.5, face="bold", size=16),
+        legend.title = element_blank(),
+        legend.text = element_text(size=12))
+pca_plot
+```
+
+# Volcano Plot
+```{r}
+plot_data <- final_results
+plot_data <- plot_data[!is.na(plot_data$gene) & plot_data$gene != "", ]
+
+plot_data$Significance <- "Not Significant"
+plot_data$Significance[plot_data$log2FoldChange > 1 & plot_data$padj < 0.05] <- "Up in Serum"
+plot_data$Significance[plot_data$log2FoldChange < -1 & plot_data$padj < 0.05] <- "Down in Serum"
+
+# Label Logic
+plot_data$label <- NA
+# Threshold > 4
+extreme_genes <- abs(plot_data$log2FoldChange) > 4
+plot_data$label[extreme_genes] <- plot_data$gene[extreme_genes]
+
+# Draw the Volcano Plot
+volcano_plot <- ggplot(plot_data, aes(x=log2FoldChange, y=-log10(padj), color=Significance)) +
+  geom_point(alpha=0.8, size=2) +
+  scale_color_manual(values=c("blue", "grey", "red")) +
+  theme_minimal() +
+  geom_vline(xintercept=c(-1, 1), linetype="dashed", color="black") +
+  geom_hline(yintercept=-log10(0.05), linetype="dashed", color="black") +
+  geom_text_repel(aes(label=label), 
+                  color="black",
+                  max.overlaps=Inf,
+                  box.padding=0.5,    
+                  point.padding=0.3,  
+                  size=3.5, 
+                  fontface="italic") +
+  labs(title="Volcano Plot - Transcriptomic Response to Serum", 
+       x="Log2 Fold Change", 
+       y="-Log10 Adjusted P-value") +
+  theme(legend.position="bottom", 
+        plot.title = element_text(hjust = 0.5, face="bold", size=16),
+        axis.text = element_text(size=12),
+        axis.title = element_text(size=14))
+
+# Save the plot
+ggsave("E745_Volcano_Clean.png", plot=volcano_plot, width=13, height=12, dpi=300)
+
+# Print to screen
+print(volcano_plot)
+```
