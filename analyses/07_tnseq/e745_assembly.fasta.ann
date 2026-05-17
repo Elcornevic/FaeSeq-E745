@@ -1,0 +1,21 @@
+3115034 10 11
+0 tig00000001 len=2762475 reads=10775 class=contig suggestRepeat=no suggestBubble=no suggestCircular=no trim=0-2762475
+0 2762475 0
+0 tig00000002 len=199382 reads=580 class=contig suggestRepeat=no suggestBubble=no suggestCircular=no trim=0-199382
+2762475 199382 0
+0 tig00000003 len=22772 reads=36 class=contig suggestRepeat=no suggestBubble=no suggestCircular=no trim=0-22772
+2961857 22772 0
+0 tig00000004 len=14734 reads=7 class=contig suggestRepeat=no suggestBubble=no suggestCircular=no trim=0-14734
+2984629 14734 0
+0 tig00000005 len=40013 reads=124 class=contig suggestRepeat=no suggestBubble=no suggestCircular=yes trim=5972-38394
+2999363 40013 0
+0 tig00000006 len=15013 reads=14 class=contig suggestRepeat=no suggestBubble=yes suggestCircular=no trim=0-15013
+3039376 15013 0
+0 tig00000007 len=16044 reads=9 class=contig suggestRepeat=no suggestBubble=no suggestCircular=yes trim=2415-13170
+3054389 16044 0
+0 tig00000008 len=15428 reads=21 class=contig suggestRepeat=no suggestBubble=no suggestCircular=yes trim=3410-12727
+3070433 15428 0
+0 tig00000009 len=24948 reads=28 class=contig suggestRepeat=no suggestBubble=no suggestCircular=no trim=0-24948
+3085861 24948 0
+0 tig00000012 len=4225 reads=6 class=contig suggestRepeat=no suggestBubble=no suggestCircular=no trim=0-4225
+3110809 4225 0

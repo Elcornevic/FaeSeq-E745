@@ -1,0 +1,15 @@
+Status	alignments/trim_ERR1801006_pass.bam	alignments/trim_ERR1801007_pass.bam	alignments/trim_ERR1801008_pass.bam	alignments/trim_ERR1801009_pass.bam	alignments/trim_ERR1801010_pass.bam	alignments/trim_ERR1801011_pass.bam	alignments/trim_ERR1801012_pass.bam	alignments/trim_ERR1801013_pass.bam	alignments/trim_ERR1801014_pass.bam
+Assigned	92338	86951	76445	113507	53809	134061	81413	89040	78500
+Unassigned_Unmapped	7326087	7805835	4760724	7556138	6902134	6786833	6749614	6424496	6351187
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	10797	8840	10481	12080	5351	12691	8453	8045	7885
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	1466	1050	527	2104	862	1346	1276	838	762

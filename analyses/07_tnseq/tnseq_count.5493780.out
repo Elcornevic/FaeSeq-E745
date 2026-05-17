@@ -1,0 +1,110 @@
+
+Warning: Unknown annotation format: GFF. GTF format is used.
+
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.1.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 9 BAM files                                      ||
+||                                                                            ||
+||                           trim_ERR1801006_pass.bam                         ||
+||                           trim_ERR1801007_pass.bam                         ||
+||                           trim_ERR1801008_pass.bam                         ||
+||                           trim_ERR1801009_pass.bam                         ||
+||                           trim_ERR1801010_pass.bam                         ||
+||                           trim_ERR1801011_pass.bam                         ||
+||                           trim_ERR1801012_pass.bam                         ||
+||                           trim_ERR1801013_pass.bam                         ||
+||                           trim_ERR1801014_pass.bam                         ||
+||                                                                            ||
+||             Output file : tnseq_master_counts.txt                          ||
+||                 Summary : tnseq_master_counts.txt.summary                  ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : e745_annot.gff (GTF)                             ||
+||      Dir for temp files : ./                                               ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file e745_annot.gff ...                                    ||
+||    Features : 3093                                                         ||
+||    Meta-features : 3093                                                    ||
+||    Chromosomes/contigs : 10                                                ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801006_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 7430688                                              ||
+||    Successfully assigned alignments : 92338 (1.2%)                         ||
+||    Running time : 0.05 minutes                                             ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801007_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 7902676                                              ||
+||    Successfully assigned alignments : 86951 (1.1%)                         ||
+||    Running time : 0.05 minutes                                             ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801008_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4848177                                              ||
+||    Successfully assigned alignments : 76445 (1.6%)                         ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801009_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 7683829                                              ||
+||    Successfully assigned alignments : 113507 (1.5%)                        ||
+||    Running time : 0.05 minutes                                             ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801010_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6962156                                              ||
+||    Successfully assigned alignments : 53809 (0.8%)                         ||
+||    Running time : 0.04 minutes                                             ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801011_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6934931                                              ||
+||    Successfully assigned alignments : 134061 (1.9%)                        ||
+||    Running time : 0.04 minutes                                             ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801012_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6840756                                              ||
+||    Successfully assigned alignments : 81413 (1.2%)                         ||
+||    Running time : 0.04 minutes                                             ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801013_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6522419                                              ||
+||    Successfully assigned alignments : 89040 (1.4%)                         ||
+||    Running time : 0.04 minutes                                             ||
+||                                                                            ||
+|| Process BAM file trim_ERR1801014_pass.bam...                               ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6438334                                              ||
+||    Successfully assigned alignments : 78500 (1.2%)                         ||
+||    Running time : 0.04 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "tnseq_master_counts.txt  ||
+|| .summary"                                                                  ||
+||                                                                            ||
+\\============================================================================//
+
