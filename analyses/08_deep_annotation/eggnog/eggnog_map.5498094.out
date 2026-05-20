@@ -1,0 +1,45 @@
+[1;32mFunctional annotation of hits...[0m
+#  emapper-2.1.13-6b02b47
+# emapper.py  -i e745_proteins.faa --output e745_functional -m diamond --cpu 2 --data_dir /sw/data/eggNOG/5.0/rackham
+[1;33m  /sw/arch/eb/software/DIAMOND/2.1.11-GCC-13.3.0/bin/diamond blastp -d '/gorilla/dataset/eggNOG_data/5.0.0/rackham/eggnog_proteins.dmnd' -q '/gorilla/home/vico3159/genome_analyses/analyses/03_annotation/prokka_e745/e745_annot.faa' --threads 2 -o '/gorilla/home/vico3159/genome_analyses/analyses/08_deep_annotation/eggnog/e745_functional.emapper.hits' --tmpdir '/gorilla/home/vico3159/genome_analyses/analyses/08_deep_annotation/eggnog/emappertmp_dmdn_9qu4a_tp' --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+500 81.72937536239624 6.12 q/s (% mem usage: 27.10, % mem avail: 72.94)
+1000 119.14021944999695 8.39 q/s (% mem usage: 27.10, % mem avail: 72.94)
+1500 166.88676261901855 8.99 q/s (% mem usage: 27.00, % mem avail: 72.95)
+2000 199.6469235420227 10.02 q/s (% mem usage: 27.10, % mem avail: 72.88)
+2500 312.4613871574402 8.00 q/s (% mem usage: 27.30, % mem avail: 72.75)
+2972 370.4833574295044 8.02 q/s (% mem usage: 27.30, % mem avail: 72.73)
+[32mDone[0m
+[1;33mResult files:[0m
+   /gorilla/home/vico3159/genome_analyses/analyses/08_deep_annotation/eggnog/e745_functional.emapper.hits
+   /gorilla/home/vico3159/genome_analyses/analyses/08_deep_annotation/eggnog/e745_functional.emapper.seed_orthologs
+   /gorilla/home/vico3159/genome_analyses/analyses/08_deep_annotation/eggnog/e745_functional.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas. 2021.
+      Molecular Biology and Evolution, msab293, https://doi.org/10.1093/molbev/msab293
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Sensitive protein alignments at tree-of-life scale using DIAMOND.
+       Buchfink B, Reuter K, Drost HG. 2021.
+       Nature Methods 18, 366–368 (2021). https://doi.org/10.1038/s41592-021-01101-x
+
+e.g. Functional annotation was performed using eggNOG-mapper (version emapper-2.1.13-6b02b47) [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+================================================================================
+
+Total hits processed: 2972
+Total time: 23448 secs
+FINISHED

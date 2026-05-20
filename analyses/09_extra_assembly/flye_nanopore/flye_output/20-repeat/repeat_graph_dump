@@ -1,0 +1,338 @@
+Edge	0	238	189	0	0	0	3	-1
+	Sequence	+edge_1_0_+disjointig_1_0_46075 46075 1 46076 0 46075
+Edge	1	192	208	0	0	0	3	-1
+	Sequence	-edge_1_0_+disjointig_1_0_46075 46075 -1 46076 0 46075
+Edge	2	175	230	1	0	0	7	-1
+	Sequence	+edge_2_0_+disjointig_10_0_379319 379319 2 379320 0 379319
+Edge	3	174	212	1	0	0	7	-1
+	Sequence	-edge_2_0_+disjointig_10_0_379319 379319 -2 379320 0 379319
+Edge	14	184	185	1	0	0	5	-1
+	Sequence	+edge_8_0_+disjointig_105_0_25863 25863 8 25864 0 25863
+Edge	15	248	209	1	0	0	5	-1
+	Sequence	-edge_8_0_+disjointig_105_0_25863 25863 -8 25864 0 25863
+Edge	18	194	199	1	0	0	7	-1
+	Sequence	+edge_10_0_+disjointig_107_0_33270 33270 10 33271 0 33270
+Edge	19	204	118	1	0	0	7	-1
+	Sequence	-edge_10_0_+disjointig_107_0_33270 33270 -10 33271 0 33270
+Edge	20	211	214	1	0	0	4	-1
+	Sequence	+edge_11_0_+disjointig_108_0_32114 32114 11 32115 0 32114
+Edge	21	215	241	1	0	0	4	-1
+	Sequence	-edge_11_0_+disjointig_108_0_32114 32114 -11 32115 0 32114
+Edge	24	218	106	1	0	0	4	-1
+	Sequence	+edge_13_0_+disjointig_11_0_94017 94017 13 94018 0 94017
+Edge	25	203	206	1	0	0	4	-1
+	Sequence	-edge_13_0_+disjointig_11_0_94017 94017 -13 94018 0 94017
+Edge	42	109	181	0	0	0	3	-1
+	Sequence	+edge_22_0_+disjointig_119_0_28171 28171 22 28172 0 28171
+Edge	43	163	162	0	0	0	3	-1
+	Sequence	-edge_22_0_+disjointig_119_0_28171 28171 -22 28172 0 28171
+Edge	54	231	223	1	0	0	7	-1
+	Sequence	+edge_28_0_+disjointig_125_0_35372 35372 28 35373 0 35372
+Edge	55	233	126	1	0	0	7	-1
+	Sequence	-edge_28_0_+disjointig_125_0_35372 35372 -28 35373 0 35372
+Edge	58	247	187	0	0	0	3	-1
+	Sequence	+edge_30_0_+disjointig_128_0_13692 13692 30 13693 0 13692
+Edge	59	249	159	0	0	0	3	-1
+	Sequence	-edge_30_0_+disjointig_128_0_13692 13692 -30 13693 0 13692
+Edge	70	178	225	1	0	0	4	-1
+	Sequence	+edge_36_0_+disjointig_133_0_15145 15145 36 15146 0 15145
+Edge	71	255	235	1	0	0	4	-1
+	Sequence	-edge_36_0_+disjointig_133_0_15145 15145 -36 15146 0 15145
+Edge	122	182	250	1	0	0	5	-1
+	Sequence	+edge_62_0_+disjointig_16_0_49375 49375 62 49376 0 49375
+Edge	123	253	243	1	0	0	5	-1
+	Sequence	-edge_62_0_+disjointig_16_0_49375 49375 -62 49376 0 49375
+Edge	136	128	153	1	0	0	4	-1
+	Sequence	+edge_69_0_+disjointig_167_0_49334 49334 69 49335 0 49334
+Edge	137	152	151	1	0	0	4	-1
+	Sequence	-edge_69_0_+disjointig_167_0_49334 49334 -69 49335 0 49334
+Edge	138	149	275	0	0	0	3	-1
+	Sequence	+edge_70_0_+disjointig_168_0_26629 26629 70 26630 0 26629
+Edge	139	219	147	0	0	0	3	-1
+	Sequence	-edge_70_0_+disjointig_168_0_26629 26629 -70 26630 0 26629
+Edge	156	134	140	1	0	0	4	-1
+	Sequence	+edge_79_0_+disjointig_177_0_22250 22250 79 22251 0 22250
+Edge	157	138	186	1	0	0	4	-1
+	Sequence	-edge_79_0_+disjointig_177_0_22250 22250 -79 22251 0 22250
+Edge	172	166	165	1	0	0	5	-1
+	Sequence	+edge_87_0_+disjointig_186_0_8886 8886 87 8887 0 8886
+Edge	173	125	124	1	0	0	5	-1
+	Sequence	-edge_87_0_+disjointig_186_0_8886 8886 -87 8887 0 8886
+Edge	182	245	262	0	0	0	3	-1
+	Sequence	+edge_92_0_+disjointig_192_0_5178 5178 92 5179 0 5178
+Edge	183	246	195	0	0	0	3	-1
+	Sequence	-edge_92_0_+disjointig_192_0_5178 5178 -92 5179 0 5178
+Edge	188	213	240	0	0	0	3	-1
+	Sequence	+edge_95_0_+disjointig_195_0_8075 8075 95 8076 0 8075
+Edge	189	117	161	0	0	0	3	-1
+	Sequence	-edge_95_0_+disjointig_195_0_8075 8075 -95 8076 0 8075
+Edge	198	116	115	0	0	0	3	-1
+	Sequence	+edge_100_0_+disjointig_2_0_8284 8284 100 8285 0 8284
+Edge	199	222	272	0	0	0	3	-1
+	Sequence	-edge_100_0_+disjointig_2_0_8284 8284 -100 8285 0 8284
+Edge	200	114	277	1	0	0	6	-1
+	Sequence	+edge_101_0_+disjointig_20_0_36320 36320 101 36321 0 36320
+Edge	201	279	113	1	0	0	6	-1
+	Sequence	-edge_101_0_+disjointig_20_0_36320 36320 -101 36321 0 36320
+Edge	208	144	311	0	0	0	3	-1
+	Sequence	+edge_105_0_+disjointig_203_0_34038 34038 105 34039 0 34038
+Edge	209	173	226	0	0	0	3	-1
+	Sequence	-edge_105_0_+disjointig_203_0_34038 34038 -105 34039 0 34038
+Edge	214	171	168	0	0	0	3	-1
+	Sequence	+edge_108_0_+disjointig_206_0_22765 22765 108 22766 0 22765
+Edge	215	108	191	0	0	0	3	-1
+	Sequence	-edge_108_0_+disjointig_206_0_22765 22765 -108 22766 0 22765
+Edge	220	104	217	1	0	0	7	-1
+	Sequence	+edge_111_0_+disjointig_21_0_62444 62444 111 62445 0 62444
+Edge	221	103	239	1	0	0	7	-1
+	Sequence	-edge_111_0_+disjointig_21_0_62444 62444 -111 62445 0 62444
+Edge	234	236	207	1	0	0	5	-1
+	Sequence	+edge_118_0_+disjointig_216_0_8428 8428 118 8429 0 8428
+Edge	235	137	139	1	0	0	5	-1
+	Sequence	-edge_118_0_+disjointig_216_0_8428 8428 -118 8429 0 8428
+Edge	242	119	107	1	0	0	5	-1
+	Sequence	+edge_122_0_+disjointig_22_0_11025 11025 122 11026 0 11025
+Edge	243	99	176	1	0	0	5	-1
+	Sequence	-edge_122_0_+disjointig_22_0_11025 11025 -122 11026 0 11025
+Edge	308	274	263	1	0	0	5	-1
+	Sequence	+edge_155_0_+disjointig_25_0_59132 59132 154 59133 0 59132
+Edge	309	197	265	1	0	0	5	-1
+	Sequence	-edge_155_0_+disjointig_25_0_59132 59132 -154 59133 0 59132
+Edge	326	129	154	1	0	0	4	-1
+	Sequence	+edge_164_0_+disjointig_260_0_11091 11091 163 11092 0 11091
+Edge	327	260	251	1	0	0	4	-1
+	Sequence	-edge_164_0_+disjointig_260_0_11091 11091 -163 11092 0 11091
+Edge	350	282	312	1	0	0	8	-1
+	Sequence	+edge_176_0_+disjointig_276_0_8872 8872 175 8873 0 8872
+Edge	351	313	314	1	0	0	8	-1
+	Sequence	-edge_176_0_+disjointig_276_0_8872 8872 -175 8873 0 8872
+Edge	356	220	283	1	0	0	5	-1
+	Sequence	+edge_179_0_+disjointig_28_0_75455 75455 178 75456 0 75455
+Edge	357	284	285	1	0	0	5	-1
+	Sequence	-edge_179_0_+disjointig_28_0_75455 75455 -178 75456 0 75455
+Edge	374	261	252	1	0	0	5	-1
+	Sequence	+edge_188_0_+disjointig_289_0_27037 27037 187 27038 0 27037
+Edge	375	242	183	1	0	0	5	-1
+	Sequence	-edge_188_0_+disjointig_289_0_27037 27037 -187 27038 0 27037
+Edge	376	160	276	1	0	0	6	-1
+	Sequence	+edge_189_0_+disjointig_29_0_295872 295872 188 295873 0 295872
+Edge	377	148	177	1	0	0	6	-1
+	Sequence	-edge_189_0_+disjointig_29_0_295872 295872 -188 295873 0 295872
+Edge	392	136	258	1	0	0	994	-1
+	Sequence	+edge_197_0_+disjointig_3_0_3106 3106 196 3107 0 3106
+Edge	393	259	244	1	0	0	994	-1
+	Sequence	-edge_197_0_+disjointig_3_0_3106 3106 -196 3107 0 3106
+Edge	404	289	133	0	0	0	3	-1
+	Sequence	+edge_203_0_+disjointig_305_0_21110 21110 202 21111 0 21110
+Edge	405	132	131	0	0	0	3	-1
+	Sequence	-edge_203_0_+disjointig_305_0_21110 21110 -202 21111 0 21110
+Edge	414	291	293	1	0	0	4	-1
+	Sequence	+edge_208_0_+disjointig_31_0_107214 107214 207 107215 0 107214
+Edge	415	295	296	1	0	0	4	-1
+	Sequence	-edge_208_0_+disjointig_31_0_107214 107214 -207 107215 0 107214
+Edge	438	330	331	0	0	0	3	-1
+	Sequence	+edge_220_0_+disjointig_321_0_5716 5716 219 5717 0 5716
+Edge	439	300	302	0	0	0	3	-1
+	Sequence	-edge_220_0_+disjointig_321_0_5716 5716 -219 5717 0 5716
+Edge	454	303	172	1	0	0	4	-1
+	Sequence	+edge_228_0_+disjointig_33_0_97017 97017 227 97018 0 97017
+Edge	455	169	304	1	0	0	4	-1
+	Sequence	-edge_228_0_+disjointig_33_0_97017 97017 -227 97018 0 97017
+Edge	468	305	122	0	0	0	3	-1
+	Sequence	+edge_235_0_+disjointig_337_0_10042 10042 234 10043 0 10042
+Edge	469	121	120	0	0	0	3	-1
+	Sequence	-edge_235_0_+disjointig_337_0_10042 10042 -234 10043 0 10042
+Edge	472	306	307	0	0	0	3	-1
+	Sequence	+edge_237_0_+disjointig_34_0_36375 36375 236 36376 0 36375
+Edge	473	308	309	0	0	0	3	-1
+	Sequence	-edge_237_0_+disjointig_34_0_36375 36375 -236 36376 0 36375
+Edge	476	278	280	1	0	0	5	-1
+	Sequence	+edge_239_0_+disjointig_341_0_36871 36871 238 36872 0 36871
+Edge	477	256	257	1	0	0	5	-1
+	Sequence	-edge_239_0_+disjointig_341_0_36871 36871 -238 36872 0 36871
+Edge	506	157	318	1	0	0	7	-1
+	Sequence	+edge_254_0_+disjointig_36_0_108866 108866 253 108867 0 108866
+Edge	507	320	322	1	0	0	7	-1
+	Sequence	-edge_254_0_+disjointig_36_0_108866 108866 -253 108867 0 108866
+Edge	508	267	269	0	0	0	3	-1
+	Sequence	+edge_255_0_+disjointig_360_0_11776 11776 254 11777 0 11776
+Edge	509	164	158	0	0	0	3	-1
+	Sequence	-edge_255_0_+disjointig_360_0_11776 11776 -254 11777 0 11776
+Edge	510	228	229	0	0	0	3	-1
+	Sequence	+edge_256_0_+disjointig_361_0_15088 15088 255 15089 0 15088
+Edge	511	323	324	0	0	0	3	-1
+	Sequence	-edge_256_0_+disjointig_361_0_15088 15088 -255 15089 0 15088
+Edge	528	326	327	1	0	0	4	-1
+	Sequence	+edge_265_0_+disjointig_37_0_18515 18515 264 18516 0 18515
+Edge	529	328	329	1	0	0	4	-1
+	Sequence	-edge_265_0_+disjointig_37_0_18515 18515 -264 18516 0 18515
+Edge	548	298	299	0	0	0	3	-1
+	Sequence	+edge_275_0_+disjointig_379_0_17721 17721 274 17722 0 17721
+Edge	549	292	294	0	0	0	3	-1
+	Sequence	-edge_275_0_+disjointig_379_0_17721 17721 -274 17722 0 17721
+Edge	550	180	179	1	0	0	7	-1
+	Sequence	+edge_276_0_+disjointig_38_0_102492 102492 275 102493 0 102492
+Edge	551	332	333	1	0	0	7	-1
+	Sequence	-edge_276_0_+disjointig_38_0_102492 102492 -275 102493 0 102492
+Edge	572	98	97	0	0	0	3	-1
+	Sequence	+edge_287_0_+disjointig_390_0_12218 12218 286 12219 0 12218
+Edge	573	232	210	0	0	0	3	-1
+	Sequence	-edge_287_0_+disjointig_390_0_12218 12218 -286 12219 0 12218
+Edge	588	96	95	0	0	0	3	-1
+	Sequence	+edge_295_0_+disjointig_398_0_7476 7476 294 7477 0 7476
+Edge	589	94	93	0	0	0	3	-1
+	Sequence	-edge_295_0_+disjointig_398_0_7476 7476 -294 7477 0 7476
+Edge	592	92	91	1	0	0	7	-1
+	Sequence	+edge_297_0_+disjointig_4_0_121873 121873 296 121874 0 121873
+Edge	593	90	89	1	0	0	7	-1
+	Sequence	-edge_297_0_+disjointig_4_0_121873 121873 -296 121874 0 121873
+Edge	598	88	87	1	0	0	6	-1
+	Sequence	+edge_300_0_+disjointig_401_0_13278 13278 299 13279 0 13278
+Edge	599	86	85	1	0	0	6	-1
+	Sequence	-edge_300_0_+disjointig_401_0_13278 13278 -299 13279 0 13278
+Edge	616	190	84	1	0	0	4	-1
+	Sequence	+edge_309_0_+disjointig_41_0_28998 28998 308 28999 0 28998
+Edge	617	83	82	1	0	0	4	-1
+	Sequence	-edge_309_0_+disjointig_41_0_28998 28998 -308 28999 0 28998
+Edge	622	81	290	1	0	0	5	-1
+	Sequence	+edge_312_0_+disjointig_412_0_17770 17770 311 17771 0 17770
+Edge	623	143	142	1	0	0	5	-1
+	Sequence	-edge_312_0_+disjointig_412_0_17770 17770 -311 17771 0 17770
+Edge	634	315	316	1	0	0	8	-1
+	Sequence	+edge_318_0_+disjointig_42_0_18629 18629 317 18630 0 18629
+Edge	635	317	80	1	0	0	8	-1
+	Sequence	-edge_318_0_+disjointig_42_0_18629 18629 -317 18630 0 18629
+Edge	646	301	79	1	0	0	4	-1
+	Sequence	+edge_324_0_+disjointig_425_0_27084 27084 323 27085 0 27084
+Edge	647	78	77	1	0	0	4	-1
+	Sequence	-edge_324_0_+disjointig_425_0_27084 27084 -323 27085 0 27084
+Edge	656	102	101	1	0	0	8	-1
+	Sequence	+edge_329_0_+disjointig_43_0_37675 37675 328 37676 0 37675
+Edge	657	100	76	1	0	0	8	-1
+	Sequence	-edge_329_0_+disjointig_43_0_37675 37675 -328 37676 0 37675
+Edge	676	75	74	1	0	0	7	-1
+	Sequence	+edge_339_0_+disjointig_44_0_79626 79626 338 79627 0 79626
+Edge	677	73	72	1	0	0	7	-1
+	Sequence	-edge_339_0_+disjointig_44_0_79626 79626 -338 79627 0 79626
+Edge	700	71	70	0	0	0	3	-1
+	Sequence	+edge_351_0_+disjointig_451_0_29953 29953 350 29954 0 29953
+Edge	701	319	321	0	0	0	3	-1
+	Sequence	-edge_351_0_+disjointig_451_0_29953 29953 -350 29954 0 29953
+Edge	714	135	141	1	0	0	4	-1
+	Sequence	+edge_358_0_+disjointig_459_0_24513 24513 357 24514 0 24513
+Edge	715	105	205	1	0	0	4	-1
+	Sequence	-edge_358_0_+disjointig_459_0_24513 24513 -357 24514 0 24513
+Edge	716	286	287	1	0	0	8	-1
+	Sequence	+edge_359_0_+disjointig_46_0_52321 52321 358 52322 0 52321
+Edge	717	69	221	1	0	0	8	-1
+	Sequence	-edge_359_0_+disjointig_46_0_52321 52321 -358 52322 0 52321
+Edge	758	68	67	1	0	0	7	-1
+	Sequence	+edge_380_0_+disjointig_48_0_82023 82023 379 82024 0 82023
+Edge	759	66	297	1	0	0	7	-1
+	Sequence	-edge_380_0_+disjointig_48_0_82023 82023 -379 82024 0 82023
+Edge	766	188	130	0	0	0	3	-1
+	Sequence	+edge_384_0_+disjointig_483_0_11162 11162 383 11163 0 11162
+Edge	767	65	64	0	0	0	3	-1
+	Sequence	-edge_384_0_+disjointig_483_0_11162 11162 -383 11163 0 11162
+Edge	780	63	62	1	0	0	6	-1
+	Sequence	+edge_391_0_+disjointig_49_0_109999 109999 390 110000 0 109999
+Edge	781	61	60	1	0	0	6	-1
+	Sequence	-edge_391_0_+disjointig_49_0_109999 109999 -390 110000 0 109999
+Edge	802	59	58	1	0	0	5	-1
+	Sequence	+edge_402_0_+disjointig_5_0_144020 144020 401 144021 0 144020
+Edge	803	57	56	1	0	0	5	-1
+	Sequence	-edge_402_0_+disjointig_5_0_144020 144020 -401 144021 0 144020
+Edge	804	55	54	1	0	0	4	-1
+	Sequence	+edge_403_0_+disjointig_50_0_17038 17038 402 17039 0 17038
+Edge	805	53	52	1	0	0	4	-1
+	Sequence	-edge_403_0_+disjointig_50_0_17038 17038 -402 17039 0 17038
+Edge	816	51	50	0	0	0	3	-1
+	Sequence	+edge_409_0_+disjointig_505_0_9231 9231 408 9232 0 9231
+Edge	817	49	48	0	0	0	3	-1
+	Sequence	-edge_409_0_+disjointig_505_0_9231 9231 -408 9232 0 9231
+Edge	836	47	46	1	0	0	6	-1
+	Sequence	+edge_419_0_+disjointig_52_0_55250 55250 418 55251 0 55250
+Edge	837	45	146	1	0	0	6	-1
+	Sequence	-edge_419_0_+disjointig_52_0_55250 55250 -418 55251 0 55250
+Edge	840	266	325	0	0	0	3	-1
+	Sequence	+edge_421_0_+disjointig_54_0_43686 43686 420 43687 0 43686
+Edge	841	44	43	0	0	0	3	-1
+	Sequence	-edge_421_0_+disjointig_54_0_43686 43686 -420 43687 0 43686
+Edge	852	156	155	1	0	0	4	-1
+	Sequence	+edge_427_0_+disjointig_6_0_87249 87249 426 87250 0 87249
+Edge	853	216	227	1	0	0	4	-1
+	Sequence	-edge_427_0_+disjointig_6_0_87249 87249 -426 87250 0 87249
+Edge	854	42	41	1	0	0	6	-1
+	Sequence	+edge_428_0_+disjointig_60_0_4876 4876 427 4877 0 4876
+Edge	855	40	39	1	0	0	6	-1
+	Sequence	-edge_428_0_+disjointig_60_0_4876 4876 -427 4877 0 4876
+Edge	858	224	254	1	0	0	7	-1
+	Sequence	+edge_430_0_+disjointig_62_0_14656 14656 429 14657 0 14656
+Edge	859	234	310	1	0	0	7	-1
+	Sequence	-edge_430_0_+disjointig_62_0_14656 14656 -429 14657 0 14656
+Edge	864	281	193	0	0	0	3	-1
+	Sequence	+edge_433_0_+disjointig_65_0_22159 22159 432 22160 0 22159
+Edge	865	38	37	0	0	0	3	-1
+	Sequence	-edge_433_0_+disjointig_65_0_22159 22159 -432 22160 0 22159
+Edge	868	270	271	1	0	0	4	-1
+	Sequence	+edge_435_0_+disjointig_67_0_17602 17602 434 17603 0 17602
+Edge	869	36	35	1	0	0	4	-1
+	Sequence	-edge_435_0_+disjointig_67_0_17602 17602 -434 17603 0 17602
+Edge	870	34	112	1	0	0	5	-1
+	Sequence	+edge_436_0_+disjointig_69_0_44902 44902 435 44903 0 44902
+Edge	871	111	110	1	0	0	5	-1
+	Sequence	-edge_436_0_+disjointig_69_0_44902 44902 -435 44903 0 44902
+Edge	872	33	32	1	0	0	5	-1
+	Sequence	+edge_437_0_+disjointig_7_0_151810 151810 436 151811 0 151810
+Edge	873	268	288	1	0	0	5	-1
+	Sequence	-edge_437_0_+disjointig_7_0_151810 151810 -436 151811 0 151810
+Edge	874	31	30	1	0	0	6	-1
+	Sequence	+edge_438_0_+disjointig_70_0_43408 43408 437 43409 0 43408
+Edge	875	29	273	1	0	0	6	-1
+	Sequence	-edge_438_0_+disjointig_70_0_43408 43408 -437 43409 0 43408
+Edge	876	28	27	1	0	0	4	-1
+	Sequence	+edge_439_0_+disjointig_71_0_7176 7176 438 7177 0 7176
+Edge	877	26	25	1	0	0	4	-1
+	Sequence	-edge_439_0_+disjointig_71_0_7176 7176 -438 7177 0 7176
+Edge	884	24	23	1	0	0	6	-1
+	Sequence	+edge_443_0_+disjointig_75_0_27446 27446 442 27447 0 27446
+Edge	885	202	198	1	0	0	6	-1
+	Sequence	-edge_443_0_+disjointig_75_0_27446 27446 -442 27447 0 27446
+Edge	892	22	237	1	0	0	7	-1
+	Sequence	+edge_447_0_+disjointig_79_0_3031 3031 446 3032 0 3031
+Edge	893	21	20	1	0	0	7	-1
+	Sequence	-edge_447_0_+disjointig_79_0_3031 3031 -446 3032 0 3031
+Edge	902	19	18	1	0	0	5	-1
+	Sequence	+edge_452_0_+disjointig_83_0_23805 23805 451 23806 0 23805
+Edge	903	201	17	1	0	0	5	-1
+	Sequence	-edge_452_0_+disjointig_83_0_23805 23805 -451 23806 0 23805
+Edge	908	16	15	1	0	0	6	-1
+	Sequence	+edge_455_0_+disjointig_86_0_26081 26081 454 26082 0 26081
+Edge	909	14	13	1	0	0	6	-1
+	Sequence	-edge_455_0_+disjointig_86_0_26081 26081 -454 26082 0 26081
+Edge	916	12	11	0	0	0	3	-1
+	Sequence	+edge_459_0_+disjointig_9_0_37573 37573 458 37574 0 37573
+Edge	917	170	167	0	0	0	3	-1
+	Sequence	-edge_459_0_+disjointig_9_0_37573 37573 -458 37574 0 37573
+Edge	920	150	10	0	0	0	3	-1
+	Sequence	+edge_461_0_+disjointig_91_0_17175 17175 460 17176 0 17175
+Edge	921	9	8	0	0	0	3	-1
+	Sequence	-edge_461_0_+disjointig_91_0_17175 17175 -460 17176 0 17175
+Edge	924	200	123	0	0	0	3	-1
+	Sequence	+edge_463_0_+disjointig_93_0_6826 6826 462 6827 0 6826
+Edge	925	7	6	0	0	0	3	-1
+	Sequence	-edge_463_0_+disjointig_93_0_6826 6826 -462 6827 0 6826
+Edge	930	5	4	1	0	0	5	-1
+	Sequence	+edge_466_0_+disjointig_98_0_26206 26206 465 26207 0 26206
+Edge	931	3	2	1	0	0	5	-1
+	Sequence	-edge_466_0_+disjointig_98_0_26206 26206 -465 26207 0 26206
+Edge	932	1	127	0	0	0	3	-1
+	Sequence	+edge_467_0_+disjointig_99_0_11044 11044 466 11045 0 11044
+Edge	933	0	145	0	0	0	3	-1
+	Sequence	-edge_467_0_+disjointig_99_0_11044 11044 -466 11045 0 11044
+Edge	934	196	196	0	0	0	3	-1
+	Sequence	+edge_468_0_+disjointig_24_11555_61255 49700 144 112128 11555 61255
+	Sequence	+edge_468_1_+disjointig_24_61255_112126 50871 144 112128 61255 112126
+Edge	935	264	264	0	0	0	3	-1
+	Sequence	-edge_468_0_+disjointig_24_11555_61255 49700 -144 112128 50872 100572
+	Sequence	-edge_468_1_+disjointig_24_61255_112126 50871 -144 112128 1 50872
