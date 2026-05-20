@@ -1,0 +1,85 @@
+---
+title: "FaeSeq-E745 - Annotation Refinement Analysis"
+author: "Victor Cornejo Villanueva"
+date: "2026-05-20"
+output: html_document
+---
+
+# Load the package
+```{r}
+library(tidyverse)
+```
+
+# 1. Read the EggNOG annotation file
+```{r}
+# EggNOG metadata starts with '##', and the header starts with '#'
+file_path <- "e745_functional.emapper.annotations"
+
+# Read the file, skipping the double-hash metadata lines
+eggnog_data <- read_tsv(file_path, comment = "##", show_col_types = FALSE)
+
+# Clean the first column name (remove the '#')
+colnames(eggnog_data)[1] <- "query"
+```
+
+# 2. Process the COG Categories
+```{r}
+# EggNOG sometimes assigns multiple COGs to one gene (e.g., "KTL"). 
+# I split them so each letter gets counted individually
+cog_counts <- eggnog_data %>%
+  select(query, COG_category) %>%
+  # Remove rows with no COG assignment
+  filter(!is.na(COG_category) & COG_category != "-") %>%
+  # Split multi-letter COGs into separate rows
+  separate_rows(COG_category, sep = "") %>%
+  # Remove empty strings created by the split
+  filter(COG_category != "") %>%
+  # Count the frequencies
+  count(COG_category, name = "gene_count") %>%
+  # Sort from highest to lowest
+  arrange(desc(gene_count))
+```
+
+# 3. Create the Functional Categorization Plot
+```{r}
+ggplot(cog_counts, aes(x = reorder(COG_category, -gene_count), y = gene_count, fill = COG_category)) +
+  geom_bar(stat = "identity", color = "black", alpha = 0.8) +
+  # Add the exact number on top of each bar
+  geom_text(aes(label = gene_count), vjust = -0.5, size = 3.5) +
+  theme_minimal(base_size = 14) +
+  labs(
+    title = "Functional Categorization (COG Distribution)",
+    subtitle = "EggNOG-mapper genomic annotations for clinical strain",
+    x = "COG Category",
+    y = "Number of Genes"
+  ) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(face = "bold"),
+    axis.text.x = element_text(face = "bold", size = 12)
+  )
+```
+
+# 4. Process the categories and extract the gene names
+```{r}
+eggnog_table <- eggnog_data %>%
+  # Remove rows without a category
+  filter(!is.na(COG_category) & COG_category != "-") %>%
+  # Split multiple letters (e.g., "VM" -> "V", "M")
+  separate_rows(COG_category, sep = "") %>%
+  filter(COG_category != "") %>%
+  # Group by each COG letter
+  group_by(COG_category) %>%
+  summarise(
+    Gene_Count = n(),
+    # Extract up to 10 real gene names (Preferred_name column) ignoring empty ones
+    My_Main_Genes = paste(head(unique(Preferred_name[!is.na(Preferred_name) & Preferred_name != "-"]), 10), collapse = ", ")
+  ) %>%
+  # Sort from highest to lowest gene count
+  arrange(desc(Gene_Count))
+
+# 3. Save the table in a file
+write_csv(eggnog_table, "COG_Table.csv")
+
+print(eggnog_table)
+```
