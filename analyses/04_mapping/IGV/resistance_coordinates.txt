@@ -1,0 +1,22 @@
+=========================================================
+  Resistance Gene Coordinates - E. faecium Aus0004
+=========================================================
+
+--> Command for gyrA:
+grep -i "gyrA" e_faecium_Aus0004.gff | grep "CDS"
+Result:
+NC_017022.1	Protein Homology	CDS	6208	8679	.	+	0	ID=cds5;Parent=gene5;Dbxref=Genbank:WP_002288365.1;Name=WP_002288365.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_016631904.1;product=DNA gyrase subunit A;protein_id=WP_002288365.1;transl_table=11
+
+--> Command for parC:
+grep -i "topoisomerase IV subunit A" e_faecium_Aus0004.gff | grep "CDS"
+Result:
+NC_017022.1	Protein Homology	CDS	1197446	1199896	.	-	0	ID=cds1223;Parent=gene1233;Dbxref=Genbank:WP_002296998.1;Name=WP_002296998.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_002298103.1;product=DNA topoisomerase IV subunit A;protein_id=WP_002296998.1;transl_table=11
+
+--> Command for pbp5:
+grep -i "penicillin-binding protein" e_faecium_Aus0004.gff | grep "CDS"
+Result:
+NC_017022.1	Protein Homology	CDS	879917	881953	.	+	0	ID=cds915;Parent=gene921;Dbxref=Genbank:WP_002303833.1;Name=WP_002303833.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_002313732.1;product=penicillin-binding protein 4;protein_id=WP_002303833.1;transl_table=11
+NC_017022.1	Protein Homology	CDS	1344343	1346496	.	-	0	ID=cds1356;Parent=gene1384;Dbxref=Genbank:WP_002296946.1;Name=WP_002296946.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_002320418.1;product=penicillin-binding protein 2;protein_id=WP_002296946.1;transl_table=11
+NC_017022.1	Protein Homology	CDS	2044588	2046933	.	+	0	ID=cds2084;Parent=gene2117;Dbxref=Genbank:WP_002296135.1;Name=WP_002296135.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_002300682.1;product=penicillin-binding protein;protein_id=WP_002296135.1;transl_table=11
+NC_017022.1	Protein Homology	CDS	2585572	2587743	.	-	0	ID=cds2636;Parent=gene2687;Dbxref=Genbank:WP_002285990.1;Name=WP_002285990.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_002285990.1;product=penicillin-binding protein 2A;protein_id=WP_002285990.1;transl_table=11
+
