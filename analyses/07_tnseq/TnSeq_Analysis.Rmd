@@ -1,0 +1,84 @@
+---
+title: "FaeSeq-E745 - TnSeq_Analysis"
+author: "Victor Cornejo Villanueva"
+date: "2026-05-17"
+output: html_document
+---
+
+# Load the packages
+```{r}
+library("DESeq2")
+```
+
+# 1. Load the count table
+```{r}
+tnseq_data <- read.table("~/Escritorio/Uppsala/9) Genome Analysis/Project/07_tnseq/tnseq_master_counts.txt", header=TRUE, sep="\t", stringsAsFactors=FALSE, check.names=FALSE)
+tnseq_data
+```
+
+# 2. Modify the table
+```{r}
+# Rename the alignment columns
+colnames(tnseq_data)[7:15] <- c("Serum_1", "Serum_2", "Serum_3", 
+                                "HSerum_1", "HSerum_2", "HSerum_3", 
+                                "BHI_1", "BHI_2", "BHI_3")
+
+# Calculate the averages for each environment
+tnseq_data$Avg_Serum  <- rowMeans(tnseq_data[, c("Serum_1", "Serum_2", "Serum_3")])
+tnseq_data$Avg_HSerum <- rowMeans(tnseq_data[, c("HSerum_1", "HSerum_2", "HSerum_3")])
+tnseq_data$Avg_BHI    <- rowMeans(tnseq_data[, c("BHI_1", "BHI_2", "BHI_3")])
+```
+
+# 3. Build the mapping dictionary
+```{r}
+# Parse the Prokka GFF file
+gff_lines <- readLines("~/Escritorio/Uppsala/9) Genome Analysis/Project/07_tnseq/e745_annot.gff")
+gff_lines <- gff_lines[!grepl("^#", gff_lines)] # Filter out structural comments
+gff_cds   <- gff_lines[grepl("\tCDS\t", gff_lines)] # Isolate Coding Sequences (CDS)
+
+# Extract the ID, gene, and product attributes
+ids      <- sub(".*ID=([^;]+).*", "\\1", gff_cds)
+genes    <- ifelse(grepl("gene=", gff_cds), sub(".*gene=([^;]+).*", "\\1", gff_cds), NA)
+products <- ifelse(grepl("product=", gff_cds), sub(".*product=([^;]+).*", "\\1", gff_cds), "Hypothetical Protein")
+
+# Create the functional mapping dataframe
+gene_mapping <- data.frame(Geneid = ids, Gene_Name = genes, Product = products, stringsAsFactors = FALSE)
+
+# Merge the tables while keeping ALL elements
+tnseq_complete <- merge(tnseq_data, gene_mapping, by = "Geneid", all.x = TRUE)
+```
+
+# 4A. Strict Serum Essentiality Filter
+```{r}
+# Select genes with robust growth in control (BHI > 50) but ABSOLUTE lethality in Active Serum (Avg_Serum == 0)
+strict_serum_essential <- subset(tnseq_complete, Avg_BHI > 50 & Avg_Serum == 0)
+strict_serum_essential <- strict_serum_essential[order(-strict_serum_essential$Avg_BHI), ]
+
+# Top 15 Strict Serum Essential Candidates
+head(strict_serum_essential[, c("Geneid", "Gene_Name", "Product", "Avg_BHI", "Avg_HSerum", "Avg_Serum")], 15)
+```
+
+# 4B. Immune Evasion Filter
+```{r}
+# Select genes that survive in BHI AND Heat-Inactivated Serum, but die in Active Serum
+immune_evasion <- subset(tnseq_complete, Avg_BHI > 50 & Avg_HSerum > 50 & Avg_Serum == 0)
+immune_evasion <- immune_evasion[order(-immune_evasion$Avg_HSerum), ]
+
+# Top 15 Immune Evasion Candidates
+head(immune_evasion[, c("Geneid", "Gene_Name", "Product", "Avg_BHI", "Avg_HSerum", "Avg_Serum")], 15)
+```
+
+# 5. Export the tables
+```{r}
+# Export the Strict Essential Genes table
+write.csv(strict_serum_essential, 
+          file = "~/Escritorio/Uppsala/9) Genome Analysis/Project/07_tnseq/Strict_Serum_Essential_Genes.csv", 
+          row.names = FALSE, 
+          quote = FALSE)
+
+# Export the Immune Evasion Candidates table
+write.csv(immune_evasion, 
+          file = "~/Escritorio/Uppsala/9) Genome Analysis/Project/07_tnseq/Immune_Evasion_Genes.csv", 
+          row.names = FALSE, 
+          quote = FALSE)
+```
