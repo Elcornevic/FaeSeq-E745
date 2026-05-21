@@ -15,3 +15,5 @@ busco_downloads/
 *.bai
 *.fq.gz
 *.fastq.gz
+spades_hybrid/spades_hybrid_output/corrected/
+*.fastq.gz

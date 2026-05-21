@@ -1,0 +1,44 @@
+Command line: /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/bin/spades.py	-1	/gorilla/home/vico3159/genome_analyses/analyses/01_preprocessing/illumina_trimmed/e745_R1_paired.fq.gz	-2	/gorilla/home/vico3159/genome_analyses/analyses/01_preprocessing/illumina_trimmed/e745_R2_paired.fq.gz	--nanopore	/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/flye_nanopore/nanopore_clean.fasta.gz	-o	/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output	-t	8	-m	64	
+
+System information:
+  SPAdes version: 4.2.0
+  Python version: 3.12.3
+  OS: Linux-5.14.0-611.54.1.el9_7.x86_64-x86_64-with-glibc2.34
+
+Output dir: /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/gorilla/home/vico3159/genome_analyses/analyses/01_preprocessing/illumina_trimmed/e745_R1_paired.fq.gz']
+      right reads: ['/gorilla/home/vico3159/genome_analyses/analyses/01_preprocessing/illumina_trimmed/e745_R2_paired.fq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+    Library number: 2, library type: nanopore
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/flye_nanopore/nanopore_clean.fasta.gz']
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/tmp
+  Threads: 8
+  Memory limit (in Gb): 64
+

@@ -1,0 +1,95 @@
+û+---
+max read length: 90
+nomerge max read length: 90
+average read length: 87.9482
+average coverage: 35.9051
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/corrected/e745_R1_paired.fq00.0_0.cor.fastq.gz'
+    right reads:
+      - '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/corrected/e745_R2_paired.fq00.0_0.cor.fastq.gz'
+    single reads:
+      - '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/corrected/e745_R_unpaired00.0_0.cor.fastq.gz'
+    data:
+      unmerged read length: 90
+      merged read length: 0
+      insert size mean: 465.708
+      insert size deviation: 14.5834
+      insert size left quantile: 448
+      insert size right quantile: 484
+      insert size median: 466
+      insert size mad: 9
+      insert size distribution: { 400: 57, 401: 52, 402: 39, 403: 53, 404: 64, 
+                                  405: 74, 406: 88, 407: 88, 408: 107, 
+                                  409: 134, 410: 96, 411: 125, 412: 138, 
+                                  413: 150, 414: 176, 415: 213, 416: 227, 
+                                  417: 236, 418: 281, 419: 280, 420: 327, 
+                                  421: 358, 422: 426, 423: 460, 424: 523, 
+                                  425: 582, 426: 657, 427: 722, 428: 821, 
+                                  429: 888, 430: 1075, 431: 1114, 432: 1309, 
+                                  433: 1393, 434: 1500, 435: 1792, 436: 1955, 
+                                  437: 2215, 438: 2458, 439: 2836, 440: 3090, 
+                                  441: 3530, 442: 3909, 443: 4296, 444: 4988, 
+                                  445: 5345, 446: 6145, 447: 6894, 448: 7340, 
+                                  449: 8066, 450: 8998, 451: 9645, 452: 10513, 
+                                  453: 11377, 454: 12106, 455: 13214, 456: 14037, 
+                                  457: 14814, 458: 15768, 459: 16222, 460: 17179, 
+                                  461: 17693, 462: 18017, 463: 18500, 464: 18766, 
+                                  465: 19223, 466: 18880, 467: 19081, 468: 19063, 
+                                  469: 18798, 470: 18440, 471: 17961, 472: 17525, 
+                                  473: 16557, 474: 16363, 475: 15243, 476: 14603, 
+                                  477: 13744, 478: 12811, 479: 12115, 480: 11211, 
+                                  481: 10398, 482: 9392, 483: 8817, 484: 7906, 
+                                  485: 7291, 486: 6474, 487: 5709, 488: 5093, 
+                                  489: 4656, 490: 4086, 491: 3633, 492: 3206, 
+                                  493: 2691, 494: 2435, 495: 2074, 496: 1897, 
+                                  497: 1582, 498: 1377, 499: 1166, 500: 901, 
+                                  501: 801, 502: 724, 503: 603, 504: 450, 
+                                  505: 430, 506: 345, 507: 250, 508: 239, 
+                                  509: 180, 510: 169, 511: 96, 512: 86, 
+                                  513: 69, 514: 52, 515: 46, 516: 21, 517: 19, 
+                                  518: 17, 519: 19, 520: 10, 521: 7, 522: 8, 
+                                  523: 5, 524: 2, 525: 2, 526: 2, 528: 1, 
+                                  529: 2, 530: 1, 532: 1 }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/.bin_reads/INFO_0'
+        paired read prefix: '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/.bin_reads/paired_0'
+        merged read prefix: '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/.bin_reads/merged_0'
+        single read prefix: '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/.bin_reads/single_0'
+        chunk num:       8
+      single reads mapped: false
+      library index:   0
+      number of reads: 3188487
+      total nucleotides: 280421833
+  - type:            nanopore
+    number:          1
+    single reads:
+      - '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/flye_nanopore/nanopore_clean.fasta.gz'
+    data:
+      unmerged read length: 207678
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/.bin_reads/INFO_1'
+        paired read prefix: '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/.bin_reads/paired_1'
+        merged read prefix: '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/.bin_reads/merged_1'
+        single read prefix: '/gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/.bin_reads/single_1'
+        chunk num:       8
+      single reads mapped: false
+      library index:   1
+      number of reads: 39144
+      total nucleotides: 135270147
+...

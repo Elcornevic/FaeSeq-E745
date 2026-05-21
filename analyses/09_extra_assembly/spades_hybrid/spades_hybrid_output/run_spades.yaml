@@ -1,0 +1,166 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Before_start_UE67J6YF7JH144BQ354N76KB4GGV0V9V
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_YTI2HRGK0KYDDG97V7XLXAVSPN3FL8TC
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_ea34bayw
+  job_uuid: SPAdes_Read_error_correction_KYRO18PMQYZZDZ7K2NHZKY16NUVZHU2R
+  mpi_support: false
+  output_files:
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/corrected/corrected.yaml
+  path: /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/share/spades
+  - --max_threads
+  - '8'
+  - --output_dir
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/corrected
+  - --not_used_yaml_file
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/corrected/dont_correct.yaml
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_corrected_reads_compression_8EKJDZHTCR37FEOZHUTCFGZZ89SHK3D1
+  mpi_support: false
+  output_files: []
+  path: /sw/arch/eb/software/Python/3.12.3-GCCcore-13.3.0/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_TKWGJWY5T9I7O76AX009L9TAAE6RQNON
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_762OLVUDZ59UB7GWFRYN0SRFMP81ZFJ2
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K21/configs/config.info
+  config_dir: K21
+  del_after: []
+  job_uuid: hpcSPAdes_K21_VX1PZFZ6MYVQNI1YV8SDL0J3HAWPFM6M
+  mpi_support: true
+  output_files: []
+  path: /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/bin/{spades_core}
+  short_name: k21
+- STAGE: K33
+  args:
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K33/configs/config.info
+  config_dir: K33
+  del_after: []
+  job_uuid: hpcSPAdes_K33_0IKHS5TXLE4F9HTT4DNPFH6ZC8AS1JHU
+  mpi_support: true
+  output_files: []
+  path: /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/bin/{spades_core}
+  short_name: k33
+- STAGE: K55
+  args:
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/configs/config.info
+  config_dir: K55
+  del_after: []
+  job_uuid: hpcSPAdes_K55_U2G0K91PIJVGK38VPGDXQ6TIIESG8GVB
+  mpi_support: true
+  output_files: []
+  path: /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/bin/{spades_core}
+  short_name: k55
+- STAGE: Copy files
+  args:
+  - /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/share/spades/spades_pipeline/scripts/copy_files.py
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/before_rr.fasta
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/before_rr.fasta
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/assembly_graph_after_simplification.gfa
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/assembly_graph_after_simplification.gfa
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/final_contigs.fasta
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/contigs.fasta
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/first_pe_contigs.fasta
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/first_pe_contigs.fasta
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/strain_graph.gfa
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/strain_graph.gfa
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/scaffolds.fasta
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/scaffolds.fasta
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/scaffolds.paths
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/scaffolds.paths
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/assembly_graph_with_scaffolds.gfa
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/assembly_graph_with_scaffolds.gfa
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/assembly_graph.fastg
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/assembly_graph.fastg
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/K55/final_contigs.paths
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_dh4pa1dv
+  job_uuid: SPAdes_Copy_files_CFWQKFYUUIQZVGGXX7TR59I3P0KY681L
+  mpi_support: false
+  output_files: []
+  path: /sw/arch/eb/software/Python/3.12.3-GCCcore-13.3.0/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_9RZQ7Y9JWBIARBRZ792YZVAO6BNDRU78
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /sw/arch/eb/software/SPAdes/4.2.0-GCC-13.3.0/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/scaffolds.fasta
+  - --misc_dir
+  - /gorilla/home/vico3159/genome_analyses/analyses/09_extra_assembly/spades_hybrid/spades_hybrid_output/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Breaking_scaffolds_XD4DL32MVVGB2IRPUV8WUBC1GN3N9ZQ1
+  mpi_support: false
+  output_files: []
+  path: /sw/arch/eb/software/Python/3.12.3-GCCcore-13.3.0/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  job_uuid: SPAdes_Terminate_WLE4QLP745G8CG5A0J6DO6Z72BVU7GVP
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: terminate
