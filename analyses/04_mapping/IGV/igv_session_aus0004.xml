@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="../e_faecium_Aus0004.fasta" locus="NC_017022.1:1197445-1199896" version="8">
+    <Resources>
+        <Resource path="../e_faecium_Aus0004.gff" type="gff"/>
+        <Resource path="../e745_vs_Aus0004_variants.vcf" type="vcf"/>
+    </Resources>
+    <Panel height="310" name="DataPanel" width="1635">
+        <Track attributeKey="e745_vs_Aus0004_variants.vcf" clazz="org.broad.igv.variant.VariantTrack" colorScale="ContinuousColorScale;0.0;93.0;255,255,255;0,0,178" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="/home/victor/Escritorio/Uppsala/9) Genome Analysis/Project/04_mapping/e745_vs_Aus0004_variants.vcf" name="e745_vs_Aus0004_variants.vcf" siteColorMode="ALLELE_FREQUENCY" visible="true"/>
+    </Panel>
+    <Panel height="307" name="FeaturePanel" width="1635">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" displayMode="EXPANDED" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="e_faecium_Aus0004.gff" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;21.0;255,255,255;0,0,178" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="/home/victor/Escritorio/Uppsala/9) Genome Analysis/Project/04_mapping/e_faecium_Aus0004.gff" name="e_faecium_Aus0004.gff" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.5"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
